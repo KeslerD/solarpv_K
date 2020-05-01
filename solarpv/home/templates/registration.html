@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+<link href="{% static 'home/style.css' %}" rel="stylesheet">
+</head>
+<html>
+	<body>
+		<center>
+			Registration Form to Join solarPV.
+			<br>
+			Required fields are denoted by *
+			<br>
+			<table>
+				<form>
+					<td>Username</td><td><input type="text" placeholder="required" maxlength="8" required id = "id"/>*</td></tr>
+					<td>Company</td><td><input type="text" placeholder="required" required id = "id"/>*</td></tr>
+					<td>First Name</td><td><input type="text" placeholder="required" required id = "id"/>*</td></tr>
+					<td>Middle Name</td><td><input type="text" id = "id"/></td></tr>
+					<td>Last Name</td><td><input type="text" placeholder="required" required id = "id"/>*</td></tr>
+					<td>Job Title</td><td><input type="text"/></td></tr>
+					<td>Email Address</td><td><input type="text"/></td></tr>
+					<td>Office Phone</td><td><input type="text"/></td></tr>
+					<td>Office Phone</td><td><input type="text"/></td></tr>
+					<td>State</td><td><select name="state" required >
+						<option value="AL">DR</option>
+						<option value="AL">Mr</option>
+						<option value="AL">Ms</option>
+						<option value="AL">Mrs</option>
+					
+					
+					<td><button type="submit">Join!</button></td>
+				</form>
+			</table>
+		</center>
+	</body>
+</html>

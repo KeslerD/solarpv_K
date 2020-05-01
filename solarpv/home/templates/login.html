@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+<link href="{% static 'home/style.css' %}" rel="stylesheet">
+</head>
+<html>
+	<body>
+		<center>
+			Web Portal Dashbard for inputting Data
+			<br>
+			Required fields are denoted by *
+			<br>
+			<table>
+				<form>
+					<td>Client</td><td><input type="text" placeholder="required" maxlength="8" required id = "id"/>*</td></tr>
+					<td>Location</td><td><input type="text" placeholder="required" maxlength="8" pattern=".*[A-Z]+\d+.*[a-z]+.*.*" required id = "id"/>*</td></tr>
+					<td>Product</td><td><input type="text" placeholder="required" required id = "id"/>*</td></tr>
+					<td>Test Standard</td><td><input type="text" id = "id"/></td></tr>
+					<td>Certificate</td><td><input type="text" id = "id"/></td></>
+					<td><button type="submit">Submit!</button></td>
+				</form>
+			</table>
+		</center>
+	</body>
+</html>
